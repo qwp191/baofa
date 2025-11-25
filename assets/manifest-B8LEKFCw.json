@@ -2,7 +2,9 @@
   "name": "BAO你發",
   "short_name": "BAO你發",
   "description": "專屬您的 BAOBAO 虛擬時尚編輯",
-  "start_url": "./",
+  "start_url": "/baofa/",
+  "scope": "/baofa/",
+  "id": "/baofa/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
@@ -11,7 +13,8 @@
     {
       "src": "https://cdn-icons-png.flaticon.com/512/5392/5392739.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "https://cdn-icons-png.flaticon.com/512/5392/5392739.png",
