@@ -6,7 +6,7 @@
     <title>BAO你發 - Virtual Fashion Studio</title>
     
     <!-- PWA Configuration -->
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="./manifest.json" />
     <meta name="theme-color" content="#ffffff" />
     
     <!-- iOS Support -->
@@ -29,7 +29,6 @@
       h1, h2, h3, h4, h5, h6, .font-serif {
         font-family: 'Playfair Display', serif;
       }
-
       /* Custom Animations */
       @keyframes fadeInUp {
         from {
@@ -41,20 +40,16 @@
           transform: none;
         }
       }
-
       @keyframes fadeIn {
         from { opacity: 0; }
         to { opacity: 1; }
       }
-
       .animate-fade-in-up {
         animation: fadeInUp 0.8s ease-out forwards;
       }
-
       .animate-fade-in {
         animation: fadeIn 1s ease-out forwards;
       }
-
       /* Scrollbar hiding for cleaner look */
       .no-scrollbar::-webkit-scrollbar {
         display: none;
@@ -74,17 +69,17 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+<link rel="stylesheet" href="./index.css">
 </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <script type="module" src="./index.tsx"></script>
     
     <!-- Register Service Worker for PWA -->
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
+          navigator.serviceWorker.register('./sw.js')
             .then((registration) => {
               console.log('PWA ServiceWorker registered: ', registration.scope);
             })

@@ -1,9 +1,10 @@
 const CACHE_NAME = 'bao-pwa-v1';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/index.tsx',
-  '/manifest.json'
+  './',
+  './index.html',
+  './index.tsx',
+  './index.css',
+  './manifest.json'
 ];
 
 self.addEventListener('install', (event) => {

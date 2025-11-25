@@ -2,7 +2,7 @@
   "name": "BAO你發",
   "short_name": "BAO你發",
   "description": "專屬您的 BAOBAO 虛擬時尚編輯",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
