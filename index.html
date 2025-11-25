@@ -79,9 +79,11 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('./sw.js')
+          navigator.serviceWorker.register('./sw.js', { scope: './' })
             .then((registration) => {
               console.log('PWA ServiceWorker registered: ', registration.scope);
+              // 檢查更新
+              registration.update();
             })
             .catch((err) => {
               console.log('PWA ServiceWorker registration failed: ', err);
